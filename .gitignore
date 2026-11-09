@@ -6,3 +6,5 @@ __MACOSX/
 
 # [ZipToGit Memory Shield] Arquivos massivos (>100MB / Datasets volumosos) auto-ignorados:
 backup/cgi-bin-original.zip
+vendor/
+.agent-sessions/
