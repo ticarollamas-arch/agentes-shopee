@@ -1,0 +1,8 @@
+# Gitignore gerado pelo ZipToGit Memory Shield
+node_modules/
+.env*
+__MACOSX/
+.DS_Store
+
+# [ZipToGit Memory Shield] Arquivos massivos (>100MB / Datasets volumosos) auto-ignorados:
+backup/cgi-bin-original.zip

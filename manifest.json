@@ -1,0 +1,15 @@
+{
+  "package": "Achadinhos — Central de Agentes",
+  "stage": "foundation_mvp",
+  "php_target": "8.4+",
+  "validated_runtime": "PHP 8.4.24",
+  "backend": "PHP PDO MySQL/MariaDB",
+  "frontend": "HTML CSS JavaScript served by PHP; no Node.js",
+  "original_site_backup": "backup/cgi-bin-original.zip",
+  "integrations_pending": [
+    "Shopee Affiliate API",
+    "Google OAuth / GA4 / Search Console",
+    "AI provider"
+  ],
+  "destructive_actions": "approval_required"
+}
