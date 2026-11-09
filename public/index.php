@@ -1,5 +1,10 @@
 <?php
 declare(strict_types=1);
+// Com `php -S ... public/index.php`, o roteador intercepta tudo; devolve false para servir arquivos estáticos (CSS/JS).
+$__static = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
+if (PHP_SAPI === 'cli-server' && str_starts_with($__static, '/assets/') && is_file(__DIR__ . $__static)) {
+    return false;
+}
 ob_start();
 require dirname(__DIR__) . '/app/bootstrap.php';
 $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
